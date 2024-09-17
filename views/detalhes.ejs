@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="stylesheets/style2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CATBOOKS</title>
+  <script src="https://kit.fontawesome.com/5dedad8172.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>CATBOOKS</h1>
+      </div>
+      <nav>
+        <a href="/start">Start</a>
+        <a href="/sobre">Sobre o projeto</a>
+      </nav>
+      <div class="sociais">
+        <a href="https://www.instagram.com/let_gomesv">
+          <button>
+            <i class="fa fa-instagram"></i>
+          </button>
+        </a>
+
+        <a href="https://github.com/mareshbard">
+          <button>
+            <i class="fa fa-github"></i>
+          </button>
+        </a>
+
+      </div>
+    </div>
+  </header>
+  <div class="container2">
+    <div id="imageDetails"></div>
+  </div>
+  <script>
+    window.onload = function () {
+      var params = new URLSearchParams(window.location.search);
+      var imageId = params.get('image');
+      var imageDetailsContainer = document.getElementById('imageDetails');
+
+      if (imageId === 'img1') {
+        imageDetailsContainer.innerHTML = `
+          <div class="container4">
+          <div class="button"> 
+             <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+          </div>
+            <h2>Título: Orgulho e Preconceito</h2>
+
+
+
+                  <img src="img/1.jpg" alt="Imagem 1">
+                  <p>Avalie:</p>
+                  <div class="rating">
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                    <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                  </div>
+
+<div class="info">
+  <div class="item-info">
+    <p>Autor(a): Jane Austen</p>
+    <p>Ano de publicação: 1813</p>
+    <p>Resumo: A trama se desenrola em torno da família Bennet, especialmente da protagonista Elizabeth Bennet, uma jovem inteligente e espirituosa, e do Sr. Darcy, um homem rico e reservado. O romance acompanha o desenvolvimento do relacionamento entre Elizabeth e Darcy, enquanto eles enfrentam obstáculos como orgulho, preconceito, mal-entendidos e diferenças sociais. </p>
+
+                <div class="info2">
+                  <div class="column">
+                    <div class="container">
+                      <div class="column">
+                        <div class="square"></div>
+                      </div>
+                      <div class="column">
+                        <p>Romance</p>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+          </div>
+        `;
+
+
+      } else if (imageId === 'img9') {
+        imageDetailsContainer.innerHTML = `
+                <div class="container4">
+                <div class="button"> 
+                   <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                </div>
+                  <h2>Título: Frankenstein</h2>
+
+
+
+                        <img src="img/9.jpg" alt="Imagem 1">
+                        <p>Avalie:</p>
+                        <div class="rating">
+                          <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                          <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                          <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                          <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                          <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                        </div>
+
+      <div class="info">
+        <div class="item-info">
+          <p>Autor(a): Mary Shelley</p>
+          <p>Ano de publicação: 1818</p>
+          <p>Resumo: Narra a história de Victor Frankenstein, um jovem cientista obcecado com a ideia de criar vida artificialmente. Ele tem sucesso em sua empreitada, criando um ser humano através da reanimação de tecidos mortos. A criatura, rejeitada pela sociedade, enfrenta solidão e sofrimento, buscando vingança contra seu criador.</p>
+
+                      <div class="info2">
+                        <div class="column">
+                          <div class="container">
+                            <div class="column">
+                              <div class="square"></div>
+                            </div>
+                            <div class="column">
+                              <p>Ficção</p>
+          </div>
+        </div>
+                     </p>
+          </div>
+        </div>
+      </div>
+                    </div>
+                  </div>
+                </div>
+              `;
+
+
+      } else if (imageId === 'img3') {
+        imageDetailsContainer.innerHTML = `
+                  <div class="container4">
+                  <div class="button"> 
+                     <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                  </div>
+                    <h2>Título: Os Irmãos Karamazov</h2>
+
+
+
+                          <img src="img/3.png" alt="Imagem 1">
+                          <p>Avalie:</p>
+                          <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                          </div>
+
+        <div class="info">
+          <div class="item-info">
+            <p>Autor(a): Fiódor Dostoiévski</p>
+            <p>Ano de publicação: 1880</p>
+            <p>Resumo: "Os Irmãos Karamazov" é uma narrativa complexa que gira em torno da vida tumultuada da família Karamazov, especialmente dos três irmãos Dmitri, Ivan e Alyosha. O patriarca da família, Fiódor Pavlovitch Karamazov, é um homem egoísta e decadente que tem relações conturbadas com seus filhos. O romance aborda questões profundas sobre moralidade, religião, livre-arbítrio e responsabilidade, enquanto os personagens lidam com dilemas éticos e emocionais.</p>
+
+                        <div class="info2">
+                          <div class="column">
+                            <div class="container">
+                              <div class="column">
+                                <div class="square"></div>
+                              </div>
+                              <div class="column">
+                                <p>Mistério</p>
+            </div>
+          </div>
+
+            </div>
+          </div>
+        </div>
+                      </div>
+                    </div>
+                  </div>
+                `;
+      } else if (imageId === 'img4') {
+        imageDetailsContainer.innerHTML = `
+        <div class="button"> 
+           <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+        </div>
+                  <div class="container4">
+                    <h2>Título: O Morro dos Ventos Uivantes</h2>
+
+
+
+                          <img src="img/4.jpg" alt="Imagem 1">
+                          <p>Avalie:</p>
+                          <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                          </div>
+
+        <div class="info">
+          <div class="item-info">
+            <p>Autor(a): Emily Brontë</p>
+            <p>Ano de publicação: 1847</p>
+            <p>Resumo: A narrativa segue os altos e baixos do relacionamento entre Heathcliff e Catherine, marcado por amor, paixão e ódio, e os efeitos devastadores que isso tem sobre suas vidas e as vidas daqueles ao seu redor. À medida que a história se desenrola, segredos sombrios do passado são revelados, vinganças são planejadas e tragédias pessoais se desenrolam.</p>
+
+                        <div class="info2">
+                          <div class="column">
+                            <div class="container">
+                              <div class="column">
+                                <div class="square"></div>
+                              </div>
+                              <div class="column">
+                                <p>Romance Gótico</p>
+            </div>
+          </div>
+                          <p>Descrição ou outras informações sobre a imagem 1.</p>
+            </div>
+          </div>
+        </div>
+                      </div>
+                    </div>
+                  </div>
+                `;
+      } else if (imageId === 'img10') {
+        imageDetailsContainer.innerHTML = `
+                  <div class="container4">
+                  <div class="button"> 
+                     <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                  </div>
+                    <h2>Título: Romeu e Julieta</h2>
+
+
+
+                          <img src="img/10.jpg" alt="Imagem 1">
+                          <p>Avalie:</p>
+                          <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                          </div>
+
+        <div class="info">
+          <div class="item-info">
+            <p>Autor(a): William Shakespeare</p>
+            <p>Ano de publicação: 1597</p>
+            <p>Resumo: A peça conta a história de dois jovens amantes, Romeu Montecchio e Julieta Capuleto, cujas famílias, Montecchios e Capuletos, estão envolvidas em uma longa e amarga rivalidade em Verona. Apesar do ódio entre suas famílias, Romeu e Julieta se apaixonam à primeira vista durante um baile de máscaras, e seu amor proibido rapidamente os leva a uma série de eventos trágicos.</p>
+
+                        <div class="info2">
+                          <div class="column">
+                            <div class="container">
+                              <div class="column">
+                                <div class="square"></div>
+                              </div>
+                              <div class="column">
+                                <p>Romance</p>
+            </div>
+          </div>
+</p>
+            </div>
+          </div>
+        </div>
+                      </div>
+                    </div>
+                  </div>
+                `;
+      } else if (imageId === 'img5') {
+        imageDetailsContainer.innerHTML = `
+                  <div class="container4">
+                  <div class="button"> 
+                     <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                  </div>
+                    <h2>Título: Dom Quixote</h2>
+
+
+
+                          <img src="img/5..jpg" alt="Imagem 1">
+                          <p>Avalie:</p>
+                          <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                          </div>
+
+        <div class="info">
+          <div class="item-info">
+            <p>Autor(a): Miguel de Cervantes</p>
+            <p>Ano de publicação: Parte 1 em 1605, Parte 2 em 1615</p>
+            <p>Resumo: "Dom Quixote" conta a história de Alonso Quixano, um nobre rural espanhol que enlouquece após ler inúmeros romances de cavalaria. Ele decide se reinventar como "Dom Quixote de la Mancha", um cavaleiro andante dedicado a reavivar a cavalaria e buscar aventuras heroicas.</p>
+
+                        <div class="info2">
+                          <div class="column">
+                            <div class="container">
+                              <div class="column">
+                                <div class="square"></div>
+                              </div>
+                              <div class="column">
+                                <p>Aventura/Comédia</p>
+            </div>
+          </div>
+
+            </div>
+          </div>
+        </div>
+                      </div>
+                    </div>
+                  </div>
+                `;
+      } else if (imageId === 'img6') {
+        imageDetailsContainer.innerHTML = `
+                  <div class="container4">
+                  <div class="button"> 
+                     <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                  </div>
+                    <h2>Título: Dom Casmurro</h2>
+
+
+
+                          <img src="img/6.jpeg" alt="Imagem 1">
+                          <p>Avalie:</p>
+                          <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                          </div>
+
+        <div class="info">
+          <div class="item-info">
+            <p>Autor(a): Machado de Assis</p>
+            <p>Ano de publicação: 1899</p>
+            <p>Resumo: "Dom Casmurro" é uma das obras mais conhecidas da literatura brasileira. Narra a história de Bento Santiago, conhecido como Dom Casmurro, que relembra sua vida e, em particular, seu relacionamento com Capitu. A trama gira em torno de ciúmes, suspeitas de traição e o processo de autodecepção do protagonista.</p>
+
+                        <div class="info2">
+                          <div class="column">
+                            <div class="container">
+                              <div class="column">
+                                <div class="square"></div>
+                              </div>
+                              <div class="column">
+                                <p>Romance</p>
+            </div>
+          </div>
+
+            </div>
+          </div>
+        </div>
+                      </div>
+                    </div>
+                  </div>
+                `;
+      } else if (imageId === 'img7') {
+        imageDetailsContainer.innerHTML = `
+                    <div class="container4">
+                    <div class="button"> 
+                       <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                      <h2>Título: Vidas Secas</h2>
+
+
+
+                            <img src="img/7.jpg" alt="Imagem 7">
+                            <p>Avalie:</p>
+                            <div class="rating">
+                              <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                              <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                              <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                              <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                              <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                            </div>
+
+          <div class="info">
+            <div class="item-info">
+              <p>Autor(a): Graciliano Ramos</p>
+              <p>Ano de publicação: 1938</p>
+              <p>Resumo: "Vidas Secas" retrata a vida miserável de uma família de retirantes sertanejos, liderada por Fabiano e sua cadela Baleia, que lutam para sobreviver em meio à seca implacável do sertão nordestino. A obra aborda questões como a pobreza, a seca, a opressão e a luta pela dignidade humana.</p>
+
+                          <div class="info2">
+                            <div class="column">
+                              <div class="container">
+                                <div class="column">
+                                  <div class="square"></div>
+                                </div>
+                                <div class="column">
+                                  <p>Romance</p>
+              </div>
+            </div>
+
+              </div>
+            </div>
+          </div>
+                        </div>
+                      </div>
+                    </div>
+                  `;
+      } else if (imageId === 'img8') {
+        imageDetailsContainer.innerHTML = `
+                    <div class="container4">
+                    <div class="button"> 
+                       <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                      <h2>Título: Quarto de Despejo</h2>
+
+
+
+                            <img src="img/8..jpg" alt="Imagem 8">
+                            <p>Avalie:</p>
+                            <div class="rating">
+                              <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                              <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                              <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                              <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                              <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                            </div>
+
+          <div class="info">
+            <div class="item-info">
+              <p>Autor(a): Carolina Maria de Jesus</p>
+              <p>Ano de publicação: 1960</p>
+              <p>Resumo: "Quarto de Despejo: Diário de uma Favelada" é um relato autobiográfico que retrata a vida da autora em uma favela de São Paulo durante os anos 1950. Carolina Maria de Jesus descreve as condições de pobreza extrema, a luta pela sobrevivência e as injustiças sociais enfrentadas pela população marginalizada.</p>
+
+                          <div class="info2">
+                            <div class="column">
+                              <div class="container">
+                                <div class="column">
+                                  <div class="square"></div>
+                                </div>
+                                <div class="column">
+                                  <p>Autobiografia</p>
+              </div>
+            </div>
+
+              </div>
+            </div>
+          </div>
+                        </div>
+                      </div>
+                    </div>
+                  `;
+          } else if (imageId === 'img11') {
+                imageDetailsContainer.innerHTML = `
+                        <div class="container4">
+                        <div class="button"> 
+                           <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                        </div>
+                          <h2>Título: O Trono do Prisioneiro</h2>
+
+
+
+                                <img src="img/11.jpg" alt="Imagem 1">
+                                <p>Avalie:</p>
+                                <div class="rating">
+                                  <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                                  <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                                  <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                                  <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                                  <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                                </div>
+
+              <div class="info">
+                <div class="item-info">
+                  <p>Autor(a): Holly Black</p>
+                  <p>Ano de publicação: 2024</p>
+                  <p>Resumo: Na sequência de O herdeiro roubado, uma guerra está a caminho. E para evitá-la, o príncipe Oak precisará se colocar entre a fúria da irmã Jude e a sede de vingança de Wren, a garota por quem está apaixonado. Uma história de Elfhame, da mente brilhante de Holly Black, com o aguardado retorno dos personagens da série O Povo do Ar.</p>
+
+                              <div class="info2">
+                                <div class="column">
+                                  <div class="container">
+                                    <div class="column">
+                                      <div class="square"></div>
+                                    </div>
+                                    <div class="column">
+                                      <p>Fantasia</p>
+                  </div>
+                </div>
+                             </p>
+                  </div>
+                </div>
+              </div>
+                            </div>
+                          </div>
+                        </div>
+                      `;
+
+
+              } else if (imageId === 'img12') {
+                imageDetailsContainer.innerHTML = `
+                          <div class="container4">
+                          <div class="button"> 
+                             <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                          </div>
+                            <h2>Título: Promessas Cruéis</h2>
+
+
+
+                                  <img src="img/12.jpg" alt="Imagem 1">
+                                  <p>Avalie:</p>
+                                  <div class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                                    <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                                    <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                                    <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                                    <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                                  </div>
+
+                <div class="info">
+                  <div class="item-info">
+                    <p>Autor(a): Rebecca Ross</p>
+                    <p>Ano de publicação: 2024</p>
+                    <p>Resumo: Após séculos adormecidos, os deuses estão em guerra novamente. No entanto, a única preocupação de Iris Winnow, uma jovem jornalista de dezoito anos, é manter sua família unida e em segurança.</p>
+
+                                <div class="info2">
+                                  <div class="column">
+                                    <div class="container">
+                                      <div class="column">
+                                        <div class="square"></div>
+                                      </div>
+                                      <div class="column">
+                                        <p>Fantasia/Romance</p>
+                    </div>
+                  </div>
+
+                    </div>
+                  </div>
+                </div>
+                              </div>
+                            </div>
+                          </div>
+                        `;
+              } else if (imageId === 'img13') {
+                imageDetailsContainer.innerHTML = `
+                <div class="button"> 
+                   <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                </div>
+                          <div class="container4">
+                            <h2>Título: Os Frágeis Fios do Poder</h2>
+
+
+
+                                  <img src="img/13.jpg" alt="Imagem 1">
+                                  <p>Avalie:</p>
+                                  <div class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                                    <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                                    <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                                    <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                                    <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                                  </div>
+
+                <div class="info">
+                  <div class="item-info">
+                    <p>Autor(a): V. E. Schwab</p>
+                    <p>Ano de publicação: 2024</p>
+                    <p>Resumo: Antigamente havia quatro mundos, todos pulsando com um poder fantástico e conectados por sua própria versão de uma única cidade: Londres. Até que, em uma tentativa desesperada de evitar a ruína de todos eles, as portas que os uniam precisaram ser seladas.</p>
+
+                                <div class="info2">
+                                  <div class="column">
+                                    <div class="container">
+                                      <div class="column">
+                                        <div class="square"></div>
+                                      </div>
+                                      <div class="column">
+                                        <p>Fantasia</p>
+                    </div>
+                  </div>
+
+                    </div>
+                  </div>
+                </div>
+                              </div>
+                            </div>
+                          </div>
+                        `;
+              } else if (imageId === 'img14') {
+                imageDetailsContainer.innerHTML = `
+                          <div class="container4">
+                          <div class="button"> 
+                             <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                          </div>
+                            <h2>Título: Academia dos Casos Arquivados</h2>
+
+
+
+                                  <img src="img/14.jpg" alt="Imagem 1">
+                                  <p>Avalie:</p>
+                                  <div class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                                    <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                                    <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                                    <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                                    <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+
+                                  </div>
+
+                <div class="info">
+                  <div class="item-info">
+                    <p>Autor(a): Jennifer Lynn</p>
+                    <p>Ano de publicação: 2024</p>
+                    <p>Resumo: Cassie é uma jovem de dezessete anos que tem o talento natural de ler pessoas, desvendando suas personalidades e desejos. Mas ela nunca levou muito a sério essa habilidade, pelo menos não até o FBI bater em sua porta com uma proposta: participar do programa Naturais, que usa jovens com talentos extraordinários para resolver casos arquivados da polícia.</p>
+
+                                <div class="info2">
+                                  <div class="column">
+                                    <div class="container">
+                                      <div class="column">
+                                        <div class="square"></div>
+                                      </div>
+                                      <div class="column">
+                                        <p>Mistério</p>
+                    </div>
+                  </div>
+        </p>
+                    </div>
+                  </div>
+                </div>
+                              </div>
+                            </div>
+                          </div>
+                        `;
+              } else if (imageId === 'img15') {
+                imageDetailsContainer.innerHTML = `
+                          <div class="container4">
+                          <div class="button"> 
+                             <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                          </div>
+                            <h2>Título: Assistente do Vilão</h2>
+
+
+
+                                  <img src="img/15.jpg" alt="Imagem 1">
+                                  <p>Avalie:</p>
+                                  <div class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                                    <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                                    <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                                    <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                                    <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                                  </div>
+
+                <div class="info">
+                  <div class="item-info">
+                    <p>Autor(a): Hannah Nicole</p>
+                    <p>Ano de publicação: 2024</p>
+                    <p>Resumo: Com uma família para sustentar, Evie Sage precisa desesperadamente de um trabalho. Então, quando um esbarrão acidental com o Vilão mais famoso de Rennedawn resulta em uma oferta de emprego, ela aceita sem pensar duas vezes.</p>
+
+                                <div class="info2">
+                                  <div class="column">
+                                    <div class="container">
+                                      <div class="column">
+                                        <div class="square"></div>
+                                      </div>
+                                      <div class="column">
+                                        <p>Romance/Comédia</p>
+                    </div>
+                  </div>
+
+                    </div>
+                  </div>
+                </div>
+                              </div>
+                            </div>
+                          </div>
+                        `;
+              } else if (imageId === 'img16') {
+                imageDetailsContainer.innerHTML = `
+                          <div class="container4">
+                          <div class="button"> 
+                             <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                          </div>
+                            <h2>Título: Canção dos Ossos</h2>
+
+
+
+                                  <img src="img/16.jpg" alt="Imagem 16">
+                                  <p>Avalie:</p>
+                                  <div class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                                    <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                                    <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                                    <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                                    <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                                  </div>
+
+                <div class="info">
+                  <div class="item-info">
+                    <p>Autor(a): Giu Domingues</p>
+                    <p>Ano de publicação: 2024</p>
+                    <p>Resumo: Ser uma soprano do Conservatório de Vermília é um privilégio. Por meio do canto, é possível criar magia e, talvez, até sonhar com um futuro promissor. E ninguém sabe disso melhor do que Elena Bordula. Ser uma das Prodígios é a única chance ao seu alcance para fugir da sombra dos crimes cometidos pela mãe, que arruinaram o nome da família. </p>
+
+                                <div class="info2">
+                                  <div class="column">
+                                    <div class="container">
+                                      <div class="column">
+                                        <div class="square"></div>
+                                      </div>
+                                      <div class="column">
+                                        <p>Romance Gótico</p>
+                    </div>
+                  </div>
+
+                    </div>
+                  </div>
+                </div>
+                              </div>
+                            </div>
+                          </div>
+                        `;
+              } else if (imageId === 'img17') {
+                imageDetailsContainer.innerHTML = `
+                            <div class="container4">
+                            <div class="button"> 
+                               <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                            </div>
+                              <h2>Título: Lendas Japonesas</h2>
+
+
+
+                                    <img src="img/17.jpg" alt="Imagem 17">
+                                    <p>Avalie:</p>
+                                    <div class="rating">
+                                      <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                                      <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                                      <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                                      <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                                      <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                                    </div>
+
+                  <div class="info">
+                    <div class="item-info">
+                      <p>Autor(a): Loputyn</p>
+                      <p>Ano de publicação: 2024</p>
+                      <p>Resumo: No universo rico e cativante das lendas japonesas, criaturas misteriosas e seres encantados surgem entre as sombras e entram em cena, desencadeando eventos surpreendentes e interações inusitadas entre os personagens. Nesse cenário fascinante que entrelaça o mundano e o sobrenatural, a quadrinista italiana Jessica Cioffi, que adota o pseudônimo Loputyn , dá nova vida e perspectiva a 25 contos tradicionais japoneses, ilustrando-os com seu toque delicado e singular.</p>
+
+                                  <div class="info2">
+                                    <div class="column">
+                                      <div class="container">
+                                        <div class="column">
+                                          <div class="square"></div>
+                                        </div>
+                                        <div class="column">
+                                          <p>Ficção</p>
+                      </div>
+                    </div>
+
+                      </div>
+                    </div>
+                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          `;
+              } else if (imageId === 'img18') {
+                imageDetailsContainer.innerHTML = `
+                            <div class="container4">
+                            <div class="button"> 
+                               <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                            </div>
+                              <h2>Título: Babel</h2>
+
+
+
+                                    <img src="img/18.jpg" alt="Imagem 18">
+                                    <p>Avalie:</p>
+                                    <div class="rating">
+                                      <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                                      <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                                      <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                                      <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                                      <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                                    </div>
+
+                  <div class="info">
+                    <div class="item-info">
+                      <p>Autor(a): R. F. Kuang</p>
+                      <p>Ano de publicação: 2024</p>
+                      <p>Resumo: Em 1828, um menino se torna órfão pelo rastro do cólera em Cantão, na China. Sob o nome de Robin Swift, ele é levado a Londres pelo misterioso professor Lovell e por anos se dedica ao estudo de diversos idiomas, como latim e grego antigo, preparando-se para um dia ingressar no prestigiado Real Instituto de Tradução da Universidade de Oxford, conhecido como Babel.</p>
+
+                                  <div class="info2">
+                                    <div class="column">
+                                      <div class="container">
+                                        <div class="column">
+                                          <div class="square"></div>
+                                        </div>
+                                        <div class="column">
+                                          <p>Fantasia</p>
+                      </div>
+                    </div>
+
+                      </div>
+                    </div>
+                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          `;
+        } else if (imageId === 'img19') {
+        imageDetailsContainer.innerHTML = `
+                    <div class="container4">
+                    <div class="button"> 
+                       <button onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                      <h2>Título: Se Você Pudesse Ver o Sol</h2>
+
+
+
+                            <img src="img/19.jpg" alt="Imagem 18">
+                            <p>Avalie:</p>
+                            <div class="rating">
+                              <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                              <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                              <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                              <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                              <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                            </div>
+
+          <div class="info">
+            <div class="item-info">
+              <p>Autor(a): Ann Liang</p>
+              <p>Ano de publicação: 2024</p>
+              <p>Resumo: Alice Sun sempre se sentiu invisível no Internato Internacional de Airington, onde é a única estudante bolsista entre os adolescentes mais ricos e influentes de Pequim. Ela se dedica para ser a melhor aluna da turma e garantir um futuro digno para sua família. Até que algo muito estranho acontece: Alice começa a ficar literalmente invisível. Invisível de verdade!</p>
+
+                          <div class="info2">
+                            <div class="column">
+                              <div class="container">
+                                <div class="column">
+                                  <div class="square"></div>
+                                </div>
+                                <div class="column">
+                                  <p>Romance</p>
+              </div>
+            </div>
+
+              </div>
+            </div>
+          </div>
+                        </div>
+                      </div>
+                    </div>
+                  `;
+      }
+    }
+  </script>
+</body>
+
+</html>
